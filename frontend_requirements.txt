@@ -1,0 +1,186 @@
+high level structure
+
+/src
+├── /components
+│   ├── /Auth
+│   │   ├── Login.jsx - done
+│   │   └── Signup.jsx - done
+│   ├── /Home
+│   │   ├── Dashboard.jsx - done
+│   │   ├── ProgressCard.jsx
+│   │   ├── CourseList.jsx
+│   │   ├── Leaderboard.jsx - done
+│   │   └── History.jsx - done
+│   ├── /Course
+│   │   ├── CourseDetails.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── DocViewer.jsx
+│   │   ├── ProblemViewer.jsx
+│   │   └── CourseProgress.jsx
+|   |   |__ Compiler.jsx
+│   ├── Navbar.jsx - done
+│   ├── Footer.jsx - dnone
+│   └── ProtectedRoute.jsx
+├── /pages
+│   ├── Home.jsx - done
+│   ├── Course.jsx - done
+│   └── Leaderboard.jsx - done 
+├── /utils
+│   └── api.js
+└── App.jsx
+
+
+Context 
+
+1)Context Api 
+i)User authentication(Token, Role , expiry time)
+ii)Theme
+
+2)Zustand
+i)course and topic progress
+ii)Active problem , course , Session state
+iii)Leaderboard data
+iv)feedback state
+
+
+
+Context API:
+user – User profile and auth details
+token – JWT token for API requests
+isAuthenticated – Boolean to check login status
+login() – Login function to set user/token
+logout() – Logout function to clear user/token
+
+
+Zustand:
+progress – Tracks course progress by course ID
+activeCourse – Stores currently opened course
+activeProblem – Stores currently opened problem
+courses – Stores available courses list
+leaderboard – Stores leaderboard data with rank/points
+mockSession – Tracks ongoing mock interview state
+updateProgress() – Updates user’s progress dynamically
+setActiveCourse() – Sets the selected course
+setActiveProblem() – Sets the selected problem
+setLeaderboard() – Updates leaderboard data
+
+
+
+
+1. Login/Signup Page
+URL: /login or /signup
+Components:
+Login.jsx
+
+Signup.jsx
+
+Basic Layout:
+Form with email, password, and submit button.
+
+Toggle link to switch between login and signup.
+
+Error message display for invalid credentials.
+
+2. Home Page
+URL: /home
+Components:
+Dashboard.jsx
+
+ProgressCard.jsx – Displays ongoing course progress.
+
+CourseList.jsx – Lists available courses by difficulty.
+
+Leaderboard.jsx – Displays top-ranked users.
+
+History.jsx – Shows previously attempted problems.
+
+Basic Layout:
+Navbar with profile icon, logout, and navigation.
+
+Main content includes:
+
+Ongoing course progress.
+
+Difficulty levels (Easy/Medium/Hard).
+
+Course and problem list.
+
+Leaderboard section.
+
+History section.
+
+3. Course Page
+URL: /course/:courseId
+Components:
+CourseDetails.jsx – Displays course name and progress.
+
+Sidebar.jsx – Lists topics and problems.
+
+DocViewer.jsx – Displays course documentation.
+
+ProblemViewer.jsx – Code editor with problem details.
+
+CourseProgress.jsx – Tracks progress within the course.
+
+Basic Layout:
+Top bar showing course title and progress.
+
+Sidebar listing topics and nested problems.
+
+Main content with documentation or problem.
+
+Navigation to other courses above the content.
+
+4. Leaderboard Page
+URL: /leaderboard
+Components:
+Leaderboard.jsx – Displays user ranks.
+
+DifficultySelector.jsx – Allows filtering by difficulty level.
+
+UserCard.jsx – Shows individual user details.
+
+Basic Layout:
+Leaderboard table with ranks, names, points, and problems solved.
+
+Difficulty selector for filtering leaderboard.
+
+Top-ranked user cards.
+
+5. Mock Interview Page (Optional)
+URL: /mock-interview
+Components:
+InterviewLanding.jsx – Introduction and start button.
+
+CodingChallenge.jsx – Problem-solving window with a timer.
+
+AIAnalysis.jsx – Provides solution feedback and suggestions.
+
+
+
+
+Basic Layout:
+1)Mock interface with timer, code editor, and test cases.
+2)AI-generated feedback after submission.
+3)Required UI Blocks
+4)Navbar.jsx
+5)Profile icon with dropdown.
+6)Links to home, courses, leaderboard, and logout.
+7)Sidebar.jsx
+8)List of course topics with nested problems.
+9)Collapsible items to expand topics.
+10)Tracks progress for each topic.
+11)CourseProgress.jsx
+12)Displays progress bar.
+13)Shows current problem and links to next unsolved problem.
+14)DocViewer.jsx and ProblemViewer.jsx
+15)Displays markdown documentation.
+16)Code editor for problem-solving.
+17)Test case validator with output display.
+18)Leaderboard.jsx
+19)Displays user rankings with points and problems solved.
+20)Allows filtering by difficulty.
+
+AI:
+Gemini 2.0-flash , flash-lite + llama finetuning
+

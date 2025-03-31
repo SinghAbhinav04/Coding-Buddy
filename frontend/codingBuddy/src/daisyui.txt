@@ -1,0 +1,643 @@
+1)Dock
+
+<div className="dock">
+  <button>
+    <svg className="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor" strokeLinejoin="miter" strokeLinecap="butt"><polyline points="1 11 12 2 23 11" fill="none" stroke="currentColor" stroke-miterlimit="10" strokeWidth="2"></polyline><path d="m5,13v7c0,1.105.895,2,2,2h10c1.105,0,2-.895,2-2v-7" fill="none" stroke="currentColor" strokeLinecap="square" stroke-miterlimit="10" strokeWidth="2"></path><line x1="12" y1="22" x2="12" y2="18" fill="none" stroke="currentColor" strokeLinecap="square" stroke-miterlimit="10" strokeWidth="2"></line></g></svg>
+    <span className="dock-label">Home</span>
+  </button>
+  
+  <button className="dock-active">
+    <svg className="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor" strokeLinejoin="miter" strokeLinecap="butt"><polyline points="3 14 9 14 9 17 15 17 15 14 21 14" fill="none" stroke="currentColor" stroke-miterlimit="10" strokeWidth="2"></polyline><rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="none" stroke="currentColor" strokeLinecap="square" stroke-miterlimit="10" strokeWidth="2"></rect></g></svg>
+    <span className="dock-label">Inbox</span>
+  </button>
+  
+  <button>
+    <svg className="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor" strokeLinejoin="miter" strokeLinecap="butt"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" strokeLinecap="square" stroke-miterlimit="10" strokeWidth="2"></circle><path d="m22,13.25v-2.5l-2.318-.966c-.167-.581-.395-1.135-.682-1.654l.954-2.318-1.768-1.768-2.318.954c-.518-.287-1.073-.515-1.654-.682l-.966-2.318h-2.5l-.966,2.318c-.581.167-1.135.395-1.654.682l-2.318-.954-1.768,1.768.954,2.318c-.287.518-.515,1.073-.682,1.654l-2.318.966v2.5l2.318.966c.167.581.395,1.135.682,1.654l-.954,2.318,1.768,1.768,2.318-.954c.518.287,1.073.515,1.654.682l.966,2.318h2.5l.966-2.318c.581-.167,1.135-.395,1.654-.682l2.318.954,1.768-1.768-.954-2.318c.287-.518.515-1.073.682-1.654l2.318-.966Z" fill="none" stroke="currentColor" strokeLinecap="square" stroke-miterlimit="10" strokeWidth="2"></path></g></svg>
+    <span className="dock-label">Settings</span>
+  </button>
+</div>
+
+
+2)hero 
+
+<div
+  className="hero min-h-screen"
+  style={{
+    backgroundImage: "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
+  }}>
+  <div className="hero-overlay"></div>
+  <div className="hero-content text-neutral-content text-center">
+    <div className="max-w-md">
+      <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+      <p className="mb-5">
+        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+        quasi. In deleniti eaque aut repudiandae et a id nisi.
+      </p>
+      <button className="btn btn-primary">Get Started</button>
+    </div>
+  </div>
+</div>
+
+
+3)login 
+
+<div className="hero bg-base-200 min-h-screen">
+  <div className="hero-content flex-col lg:flex-row-reverse">
+    <div className="text-center lg:text-left">
+      <h1 className="text-5xl font-bold">Login now!</h1>
+      <p className="py-6">
+        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+        quasi. In deleniti eaque aut repudiandae et a id nisi.
+      </p>
+    </div>
+    <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div className="card-body">
+        <fieldset className="fieldset">
+          <label className="fieldset-label">Email</label>
+          <input type="email" className="input" placeholder="Email" />
+          <label className="fieldset-label">Password</label>
+          <input type="password" className="input" placeholder="Password" />
+          <div><a className="link link-hover">Forgot password?</a></div>
+          <button className="btn btn-neutral mt-4">Login</button>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+
+4)Nav bar 
+
+<div className="navbar bg-base-100 shadow-sm">
+  <div className="navbar-start">
+    <div className="dropdown">
+      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
+      </div>
+      <ul
+        tabIndex={0}
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a>Homepage</a></li>
+        <li><a>Portfolio</a></li>
+        <li><a>About</a></li>
+      </ul>
+    </div>
+  </div>
+  <div className="navbar-center">
+    <a className="btn btn-ghost text-xl">daisyUI</a>
+  </div>
+  <div className="navbar-end">
+    <button className="btn btn-ghost btn-circle">
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /> </svg>
+    </button>
+    <button className="btn btn-ghost btn-circle">
+      <div className="indicator">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /> </svg>
+        <span className="badge badge-xs badge-primary indicator-item"></span>
+      </div>
+    </button>
+  </div>
+</div>
+
+
+5)menu
+
+     <ul className="menu bg-base-200 lg:menu-horizontal rounded-box">
+  <li>
+    <a>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+      </svg>
+      Inbox
+      <span className="badge badge-xs">99+</span>
+    </a>
+  </li>
+  <li>
+    <a>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      Updates
+      <span className="badge badge-xs badge-warning">NEW</span>
+    </a>
+  </li>
+  <li>
+    <a>
+      Stats
+      <span className="badge badge-xs badge-info"></span>
+    </a>
+  </li>
+</ul>
+      <br/>
+      <div className="dropdown dropdown-hover">
+        <div tabIndex={0} role="button" className="btn m-1">Hover</div>
+        <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-10 w-52 p-2 shadow-sm">
+          <li><a>Item 1</a></li>
+          <li><a>Item 2</a></li>
+        </ul>
+      </div>
+
+
+6)Theme
+
+      <label className="swap swap-rotate">
+        {/* This checkbox controls the theme */}
+        <input type="checkbox" className="theme-controller" value="synthwave" onChange={(e) => {
+          document.documentElement.setAttribute(
+            "data-theme",
+            e.target.checked ? "dark" : "light"
+          );
+        }} />
+
+        {/* Sun icon */}
+        <svg
+          className="swap-off h-10 w-10 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24">
+          <path
+            d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"
+          />
+        </svg>
+
+        {/* Moon icon */}
+        <svg
+          className="swap-on h-10 w-10 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24">
+          <path
+            d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"
+          />
+        </svg>
+      </label>
+
+7)qna
+
+<div className="collapse bg-base-100 border border-base-300">
+  <input type="radio" name="my-accordion-1" defaultChecked />
+  <div className="collapse-title font-semibold">How do I create an account?</div>
+  <div className="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+</div>
+<div className="collapse bg-base-100 border border-base-300">
+  <input type="radio" name="my-accordion-1" />
+  <div className="collapse-title font-semibold">I forgot my password. What should I do?</div>
+  <div className="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+</div>
+<div className="collapse bg-base-100 border border-base-300">
+  <input type="radio" name="my-accordion-1" />
+  <div className="collapse-title font-semibold">How do I update my profile information?</div>
+  <div className="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+</div>
+
+8)image slider 
+
+<div className="carousel rounded-box w-96">
+  <div className="carousel-item w-1/2">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
+      className="w-full" />
+  </div>
+  <div className="carousel-item w-1/2">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
+      className="w-full" />
+  </div>
+  <div className="carousel-item w-1/2">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
+      className="w-full" />
+  </div>
+  <div className="carousel-item w-1/2">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
+      className="w-full" />
+  </div>
+  <div className="carousel-item w-1/2">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp"
+      className="w-full" />
+  </div>
+  <div className="carousel-item w-1/2">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp"
+      className="w-full" />
+  </div>
+  <div className="carousel-item w-1/2">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
+      className="w-full" />
+  </div>
+</div>
+
+
+9)Stats
+
+<div className="stats shadow">
+  <div className="stat">
+    <div className="stat-figure text-primary">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        className="inline-block h-8 w-8 stroke-current">
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+      </svg>
+    </div>
+    <div className="stat-title">Total Likes</div>
+    <div className="stat-value text-primary">25.6K</div>
+    <div className="stat-desc">21% more than last month</div>
+  </div>
+
+  <div className="stat">
+    <div className="stat-figure text-secondary">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        className="inline-block h-8 w-8 stroke-current">
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+      </svg>
+    </div>
+    <div className="stat-title">Page Views</div>
+    <div className="stat-value text-secondary">2.6M</div>
+    <div className="stat-desc">21% more than last month</div>
+  </div>
+
+  <div className="stat">
+    <div className="stat-figure text-secondary">
+      <div className="avatar online">
+        <div className="w-16 rounded-full">
+          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+        </div>
+      </div>
+    </div>
+    <div className="stat-value">86%</div>
+    <div className="stat-title">Tasks done</div>
+    <div className="stat-desc text-secondary">31 tasks remaining</div>
+  </div>
+</div>
+
+10)Table (leaderboard)
+
+<div className="overflow-x-auto">
+  <table className="table">
+    {/* head */}
+    <thead>
+      <tr>
+        <th>
+          <label>
+            <input type="checkbox" className="checkbox" />
+          </label>
+        </th>
+        <th>Name</th>
+        <th>Job</th>
+        <th>Favorite Color</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {/* row 1 */}
+      <tr>
+        <th>
+          <label>
+            <input type="checkbox" className="checkbox" />
+          </label>
+        </th>
+        <td>
+          <div className="flex items-center gap-3">
+            <div className="avatar">
+              <div className="mask mask-squircle h-12 w-12">
+                <img
+                  src="https://img.daisyui.com/images/profile/demo/2@94.webp"
+                  alt="Avatar Tailwind CSS Component" />
+              </div>
+            </div>
+            <div>
+              <div className="font-bold">Hart Hagerty</div>
+              <div className="text-sm opacity-50">United States</div>
+            </div>
+          </div>
+        </td>
+        <td>
+          Zemlak, Daniel and Leannon
+          <br />
+          <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
+        </td>
+        <td>Purple</td>
+        <th>
+          <button className="btn btn-ghost btn-xs">details</button>
+        </th>
+      </tr>
+      {/* row 2 */}
+      <tr>
+        <th>
+          <label>
+            <input type="checkbox" className="checkbox" />
+          </label>
+        </th>
+        <td>
+          <div className="flex items-center gap-3">
+            <div className="avatar">
+              <div className="mask mask-squircle h-12 w-12">
+                <img
+                  src="https://img.daisyui.com/images/profile/demo/3@94.webp"
+                  alt="Avatar Tailwind CSS Component" />
+              </div>
+            </div>
+            <div>
+              <div className="font-bold">Brice Swyre</div>
+              <div className="text-sm opacity-50">China</div>
+            </div>
+          </div>
+        </td>
+        <td>
+          Carroll Group
+          <br />
+          <span className="badge badge-ghost badge-sm">Tax Accountant</span>
+        </td>
+        <td>Red</td>
+        <th>
+          <button className="btn btn-ghost btn-xs">details</button>
+        </th>
+      </tr>
+      {/* row 3 */}
+      <tr>
+        <th>
+          <label>
+            <input type="checkbox" className="checkbox" />
+          </label>
+        </th>
+        <td>
+          <div className="flex items-center gap-3">
+            <div className="avatar">
+              <div className="mask mask-squircle h-12 w-12">
+                <img
+                  src="https://img.daisyui.com/images/profile/demo/4@94.webp"
+                  alt="Avatar Tailwind CSS Component" />
+              </div>
+            </div>
+            <div>
+              <div className="font-bold">Marjy Ferencz</div>
+              <div className="text-sm opacity-50">Russia</div>
+            </div>
+          </div>
+        </td>
+        <td>
+          Rowe-Schoen
+          <br />
+          <span className="badge badge-ghost badge-sm">Office Assistant I</span>
+        </td>
+        <td>Crimson</td>
+        <th>
+          <button className="btn btn-ghost btn-xs">details</button>
+        </th>
+      </tr>
+      {/* row 4 */}
+      <tr>
+        <th>
+          <label>
+            <input type="checkbox" className="checkbox" />
+          </label>
+        </th>
+        <td>
+          <div className="flex items-center gap-3">
+            <div className="avatar">
+              <div className="mask mask-squircle h-12 w-12">
+                <img
+                  src="https://img.daisyui.com/images/profile/demo/5@94.webp"
+                  alt="Avatar Tailwind CSS Component" />
+              </div>
+            </div>
+            <div>
+              <div className="font-bold">Yancy Tear</div>
+              <div className="text-sm opacity-50">Brazil</div>
+            </div>
+          </div>
+        </td>
+        <td>
+          Wyman-Ledner
+          <br />
+          <span className="badge badge-ghost badge-sm">Community Outreach Specialist</span>
+        </td>
+        <td>Indigo</td>
+        <th>
+          <button className="btn btn-ghost btn-xs">details</button>
+        </th>
+      </tr>
+    </tbody>
+
+     {/* foot */}
+    <tfoot>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Job</th>
+        <th>Favorite Color</th>
+        <th></th>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+11)Pagination
+
+
+<div className="join">
+  <button className="join-item btn">«</button>
+  <button className="join-item btn">Page 22</button>
+  <button className="join-item btn">»</button>
+</div>
+
+
+12) Timeline
+
+<ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+  <li>
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        className="h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <div className="timeline-start mb-10 md:text-end">
+      <time className="font-mono italic">1984</time>
+      <div className="text-lg font-black">First Macintosh computer</div>
+      The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh
+      personal computer. It played a pivotal role in establishing desktop publishing as a general
+      office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed
+      in a beige case with integrated carrying handle; it came with a keyboard and single-button
+      mouse.
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        className="h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <div className="timeline-end md:mb-10">
+      <time className="font-mono italic">1998</time>
+      <div className="text-lg font-black">iMac</div>
+      iMac is a family of all-in-one Mac desktop computers designed and built by Apple Inc. It has
+      been the primary part of Apple's consumer desktop offerings since its debut in August 1998,
+      and has evolved through seven distinct forms
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        className="h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <div className="timeline-start mb-10 md:text-end">
+      <time className="font-mono italic">2001</time>
+      <div className="text-lg font-black">iPod</div>
+      The iPod is a discontinued series of portable media players and multi-purpose mobile devices
+      designed and marketed by Apple Inc. The first version was released on October 23, 2001, about
+      8+1⁄2 months after the Macintosh version of iTunes was released. Apple sold an estimated 450
+      million iPod products as of 2022. Apple discontinued the iPod product line on May 10, 2022. At
+      over 20 years, the iPod brand is the oldest to be discontinued by Apple
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        className="h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <div className="timeline-end md:mb-10">
+      <time className="font-mono italic">2007</time>
+      <div className="text-lg font-black">iPhone</div>
+      iPhone is a line of smartphones produced by Apple Inc. that use Apple's own iOS mobile
+      operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on
+      January 9, 2007. Since then, Apple has annually released new iPhone models and iOS updates. As
+      of November 1, 2018, more than 2.2 billion iPhones had been sold. As of 2022, the iPhone
+      accounts for 15.6% of global smartphone market share
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        className="h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <div className="timeline-start mb-10 md:text-end">
+      <time className="font-mono italic">2015</time>
+      <div className="text-lg font-black">Apple Watch</div>
+      The Apple Watch is a line of smartwatches produced by Apple Inc. It incorporates fitness
+      tracking, health-oriented capabilities, and wireless telecommunication, and integrates with
+      iOS and other Apple products and services
+    </div>
+  </li>
+</ul>
+
+
+13)Footer
+
+<footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+  <aside>
+    <svg
+      width="50"
+      height="50"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      fillRule="evenodd"
+      clipRule="evenodd"
+      className="fill-current">
+      <path
+        d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
+    </svg>
+    <p>
+      ACME Industries Ltd.
+      <br />
+      Providing reliable tech since 1992
+    </p>
+  </aside>
+  <nav>
+    <h6 className="footer-title">Services</h6>
+    <a className="link link-hover">Branding</a>
+    <a className="link link-hover">Design</a>
+    <a className="link link-hover">Marketing</a>
+    <a className="link link-hover">Advertisement</a>
+  </nav>
+  <nav>
+    <h6 className="footer-title">Company</h6>
+    <a className="link link-hover">About us</a>
+    <a className="link link-hover">Contact</a>
+    <a className="link link-hover">Jobs</a>
+    <a className="link link-hover">Press kit</a>
+  </nav>
+  <nav>
+    <h6 className="footer-title">Legal</h6>
+    <a className="link link-hover">Terms of use</a>
+    <a className="link link-hover">Privacy policy</a>
+    <a className="link link-hover">Cookie policy</a>
+  </nav>
+</footer>
+
